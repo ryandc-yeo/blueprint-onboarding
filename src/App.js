@@ -1,24 +1,13 @@
-import logo from './logo.svg';
+import Post from './Post';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Blueprint Onboarding
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Post author="Farmer Bob" body="Farmers only" />
+      <Post author="Blue" body="Print" />
+      <Post author="Printer" body="Not twitter I swear" />
+    </>
   );
 }
 
